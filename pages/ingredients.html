@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Recipe Finder</title>
+
+    <link rel="stylesheet" href="../css/globals.css" />
+    <link rel="stylesheet" href="../css/about.css" />
+    <link rel="stylesheet" href="../css/recipe.css" />
+  </head>
+  <body>
+    <nav>
+      <div class="logo">
+        <img src="../images/recipe-logo.png" alt="Recipe Finder Logo" />
+      </div>
+
+      <div class="nav-links">
+        <a href="../index.html">Home</a>
+        <a href="about.html">About</a>
+        <a href="contact.html">Contact</a>
+        <a href="exploreus.html" class="active">Explore</a>
+      </div>
+    </nav>
+
+    <div class="recipe-container">
+      <form class="input-container">
+        <input type="text" placeholder="Find your Meal by it's Ingredients" />
+      </form>
+
+      <div class="ingredients-container">
+        <div class="help">
+          <img src="../images/ingredients.gif" />
+          <h1>Search by Ingredients names</h1>
+        </div>
+      </div>
+
+      <div class="detail-modal">
+        <!-- Modal content -->
+        <div class="modal-content">
+          <span class="close">X</span>
+
+          <div class="meal-container" style="border: none"></div>
+        </div>
+      </div>
+    </div>
+
+    <script src="../js/ingredient.js"></script>
+  </body>
+</html>
