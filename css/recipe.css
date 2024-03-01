@@ -196,3 +196,31 @@
 .close:hover {
   transform: scale(0.9);
 }
+
+@media all and (max-width: 900px) {
+  .recipe-container {
+    margin: 100px;
+  }
+  .meal-container .row {
+    flex-direction: column;
+    gap: 20px;
+    width: 75%;
+  }
+  .meal-container .ingredients ul {
+    column-count: 1;
+  }
+  .instructions p {
+    text-align: justify;
+  }
+  .modal-content {
+    width: 90%;
+  }
+
+  .meal-container .instructions,
+  .meal-container .ingredients {
+    width: 75%;
+  }
+  .modal-content {
+    margin-top: 20px;
+  }
+}

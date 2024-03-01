@@ -50,6 +50,13 @@ textarea {
   color: var(--yellow);
 }
 
+@media all and (max-width: 500px) {
+  .input-group input,
+  textarea {
+    width: 300px;
+  }
+}
+
 @keyframes slide-in-fwd-center {
   0% {
     -webkit-transform: translateZ(-1400px);

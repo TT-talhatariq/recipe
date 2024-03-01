@@ -56,6 +56,17 @@
   object-fit: cover;
 }
 
+@media all and (max-width: 800px) {
+  .hero-container {
+    flex-direction: column;
+    gap: 150px;
+  }
+  .hero-container .leftBox {
+    width: 100%;
+    margin-top: 100px;
+  }
+}
+
 @keyframes slide-in-left {
   0% {
     -webkit-transform: translateX(-1000px);

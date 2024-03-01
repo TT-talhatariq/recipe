@@ -71,32 +71,14 @@
   animation: slide-in-left 1s ease;
 }
 
-.about-container .center {
-}
-.about-container .right {
-}
-
-@-webkit-keyframes slide-in-left {
-  0% {
-    -webkit-transform: translateX(-1000px);
-    transform: translateX(-1000px);
-    opacity: 0;
+@media all and (max-width: 800px) {
+  .about-container {
+    flex-direction: column;
+    padding-top: 100px;
+    padding-bottom: 100px;
+    height: fit-content;
   }
-  100% {
-    -webkit-transform: translateX(0);
-    transform: translateX(0);
-    opacity: 1;
-  }
-}
-@keyframes slide-in-left {
-  0% {
-    -webkit-transform: translateX(-1000px);
-    transform: translateX(-1000px);
-    opacity: 0;
-  }
-  100% {
-    -webkit-transform: translateX(0);
-    transform: translateX(0);
-    opacity: 1;
+  .about-container .card {
+    min-height: fit-content;
   }
 }

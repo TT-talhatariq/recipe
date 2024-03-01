@@ -35,6 +35,29 @@
   text-align: justify;
 }
 
+@media all and (max-width: 800px) {
+  .about-container {
+    flex-direction: column;
+    align-items: center;
+  }
+  .leftBox {
+    width: 500px;
+    margin-top: 100px;
+  }
+  .about-container h1 {
+    text-align: center;
+  }
+  .about-container p {
+    width: 100%;
+  }
+}
+
+@media all and (max-width: 500px) {
+  .leftBox {
+    width: 250px;
+  }
+}
+
 @keyframes slide-in-left {
   0% {
     -webkit-transform: translateX(-1000px);
